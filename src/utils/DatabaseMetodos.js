@@ -14,10 +14,10 @@ class DatabaseMetodos{
     }
 
     static gerarDicas(){
-        let x = Math.random() * (Database.Dicas.length - 0) + 0;
+        let x = Math.random() * Database.Dicas.length;
         x = Math.floor(x);
         console.log(x)
-        return Database.Dicas.length >= 1? Database.Dicas[x] : Database.Dicas;
+        return Database.Dicas.length >= 1 ? Database.Dicas[x] : Database.Dicas;
     }
 
     static inserirUsuario(usuario){
